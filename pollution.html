@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<style>
+* {
+  box-sizing: border-box;  
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+  
+}
+
+#hd{
+font-size:40px;
+color:white;
+text-align:center;
+font-family: 'Lobster';
+
+}
+
+.dot {
+  height: 45px;
+  width: 45px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1 {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.row {
+  display: table;
+}
+
+
+</style>
+
+</head>
+
+<body background="images/mai.jpg" height="100%" width=100%>
+
+
+<h1 id="hd"><span class="dot2"></span><span class="dot1"></span><span class="dot"></span><u>Pollution Control</u><span class="dot"></span><span class="dot1"></span><span class="dot2"></span></font></h1>
+
+<div class="row">
+  <div class="column">
+    <img src="images/gettyimages-621784524-594x594.jpg" width="400" height="300" border="5" >
+	<input type="button" id=1 value="Like"></input>
+  </div>
+  <div class="column">
+    <img src="images/gettyimages-935552990-594x594.jpg" width="400" height="300" border="5">
+	<input type="button" id=2 value="Like"></input>
+</div>
+  <div class="column">
+    <img src="images/gettyimages-187985268-594x594.jpg" width="400" height="300" border="5">
+  <input type="button" id=3 value="Like"></input>
+</div>
+   <div class="column">
+    <img src="images/gettyimages-894784214-594x594.jpg" width="400" height="300" border="5">
+    <input type="button" id=4 value="Like"></input> 
+</div>
+   <div class="column">
+    <img src="images/gettyimages-1042025822-594x594.jpg" width="400" height="300" border="5">
+    <input type="button" id=5 value="Like"></input>
+  </div>
+   <div class="column">
+   <input type="file" name="pic" accept="image/*" id="inp">
+   <input type="button" value="Upload" id="upload">
+   <img src=""  width="400" height="300" id="img">
+	<input type="button" id=6 value="Like"></input>
+	
+  </div>
+  
+  
+  </div>
+</div>
+<script type="text/javascript">
+	document.getElementById("1").onclick=function(){
+		if(document.getElementById("1").value=="Like"){
+		document.getElementById("1").value="Unlike";
+		}
+		else if(document.getElementById("1").value=="Unlike"){	
+		document.getElementById("1").value="Like";
+		}
+	}
+	document.getElementById("2").onclick=function(){
+		if(document.getElementById("2").value=="Like"){
+		document.getElementById("2").value="Unlike";
+		}
+		else if(document.getElementById("2").value=="Unlike"){	
+		document.getElementById("2").value="Like";
+		}
+	}
+	document.getElementById("3").onclick=function(){
+		if(document.getElementById("3").value=="Like"){
+		document.getElementById("3").value="Unlike";
+		}
+		else if(document.getElementById("3").value=="Unlike"){	
+		document.getElementById("3").value="Like";
+		}
+	}
+	document.getElementById("4").onclick=function(){
+		if(document.getElementById("4").value=="Like"){
+		document.getElementById("4").value="Unlike";
+		}
+		else if(document.getElementById("4").value=="Unlike"){	
+		document.getElementById("4").value="Like";
+		}
+	}
+	document.getElementById("5").onclick=function(){
+		if(document.getElementById("5").value=="Like"){
+		document.getElementById("5").value="Unlike";
+		}
+		else if(document.getElementById("5").value=="Unlike"){	
+		document.getElementById("5").value="Like";
+		}
+	}
+	document.getElementById("6").onclick=function(){
+		if(document.getElementById("6").value=="Like"){
+		document.getElementById("6").value="Unlike";
+		}
+		else if(document.getElementById("6").value=="Unlike"){	
+		document.getElementById("6").value="Like";
+		}
+	}
+	document.getElementById("upload").onclick=function(){
+		document.getElementById("img").src=document.getElementById("inp").files[0].name;
+	
+	
+	}
+
+
+</script>
+<a href="index.html">
+        <button >Home</button>
+<a href="new.html">
+        <button >Categories</button>
+</body>
+</html>
